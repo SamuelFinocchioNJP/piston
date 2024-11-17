@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 # Put instructions to run the runtime
-filename=$1
+
+CODE=$1.js
 shift
-java $filename "$@"
+
+node $CODE "$@"
